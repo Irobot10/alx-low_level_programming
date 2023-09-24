@@ -5,12 +5,13 @@
 */
 void print_number(int n)
 {
-	unsigned int i, a, n1;
+	unsigned int a, n1;
+	a = 1;
 
 	if (n < 0)
 	{
 		n = n * -1;
-		putchar('-');
+		_putchar('-');
 	}
 	n1 = n;
 
@@ -22,8 +23,10 @@ void print_number(int n)
 			a = a * 10;
 		}
 		for (; a >= 1; a = a / 10)
-			putchar(((n1 / a) % 10) + '0');
+		{
+			_putchar(((n1 / a) % 10) + '0');
+		}
 	}
 	else
-		putchar(n1 + '0');
+		_putchar(n1 + '0');
 }
