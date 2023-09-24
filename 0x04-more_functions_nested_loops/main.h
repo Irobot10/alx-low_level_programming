@@ -1,6 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOBLERTON_H
 #include <stdio.h>
+#include <limits.h>
 
 int _isupper(int c);
 
